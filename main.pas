@@ -6,7 +6,7 @@ uses
 var
 	globalInpChar, mode: char;
   level: integer = 0;
-  modeStr: string; 
+  modeStr: string = ''; 
 
 begin
   clrScr;

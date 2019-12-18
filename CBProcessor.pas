@@ -229,8 +229,6 @@ implementation
       // if the person doesn't match current lamp position, then it cannot cross the river
       if ((node.content.data[i].isCrossed and (currentSide = 'S')) xor (not node.content.data[i].isCrossed and (currentSide = 'D')))
         then allowedRule[i] := FALSE else allowedRule[i] := TRUE;
-      write (allowedRule[i]);
-      write (' ');
     end;
     //end ruler init
     
@@ -295,7 +293,7 @@ implementation
     end;
     node.isVisited := TRUE;  //tandai node yang sudah digenerate sebagai TRUE
     //delay(500);  //just for debugging
-    readln;  //just for debugging
+    //readln;  //just for debugging
   end;
 
   procedure cbBFS (numOfLevel : integer);
